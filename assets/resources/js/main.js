@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     //Typing Scripts
     var typed = new Typed(".tying", {
-        strings: ["ready to give maximum service", "by your side in your service "],
+        strings: ["OpenMRS, OpenMRS+, ", "Scale up share health record (SHR)"],
         typeSpeed: 100,
         backSpeed: 10,
         loop: true
@@ -41,14 +41,14 @@ $(document).ready(function() {
 
     //Typing Scripts
     var typed = new Typed(".tying2", {
-        strings: ["specialist", "CARDIOLOGY", "DENTAL UNIT"],
+        strings: ["OPD (Outdoor Patient Department)", "Pharmacy", "Inventory"],
         typeSpeed: 150,
         backSpeed: 10,
         loop: true
     });
     //Typing Scripts
     var typed = new Typed(".tying3", {
-        strings: ["CRITICAL CARE MEDICINE", "DERMATOLOGY", "DIABETOLOGY"],
+        strings: ["Administration", "IT/ITES"],
         typeSpeed: 150,
         backSpeed: 10,
         loop: true

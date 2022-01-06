@@ -51,6 +51,7 @@ ul {
 .btn-button {
     margin-top: 2rem;
     position: relative;
+    text-align: center;
 }
 
 .btn-button a {
@@ -94,6 +95,28 @@ ul {
     z-index: -1;
 }
 
+.title_heading {
+    color: #000;
+    font-size: 4rem;
+}
+
+.flexible {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexible_item {
+    flex-basis: 45%;
+    margin: 0 auto;
+}
+
+.title_content {
+    line-height: 27px;
+    color: darkgrey;
+}
+
 
 /* Common CSS End*/
 
@@ -131,6 +154,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 4rem;
 }
 
 .navbar_area::before,
@@ -267,13 +291,12 @@ ul {
     display: block;
 }
 
-.navbar_content {
+.navbar_content .title_heading {
     text-align: center;
     color: #fff;
-    margin-top: 4rem;
 }
 
-.navbar_content h3 {
+.navbar_content .title_heading {
     font-size: 25px;
     padding: 1rem 0;
 }
@@ -431,6 +454,94 @@ ul {
 
 
 /* Slider Area Css end */
+
+
+/* About Section Start Start Here  */
+
+.about_section {
+    margin-top: 4rem;
+}
+
+.about_section h4 {
+    color: darkgrey;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.about_section .btn-button {
+    text-align: start;
+}
+
+.about_section .btn-button a {
+    color: #000;
+}
+
+.about_section .title_heading {
+    color: rgb(51, 51, 51);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+/* About Section End Here  */
+
+
+/* Our Products Section  Start Here  */
+
+.our_product {
+    margin-top: 4rem;
+}
+
+.our_product .title_heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    color: rgb(51, 51, 51);
+    ;
+}
+
+.our_product .title_heading::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 50%;
+    width: 178px;
+    height: 4px;
+    background: #01B0AE;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    bottom: -8px;
+}
+
+.our_product .title_content {
+    padding: 0 4rem;
+}
+
+
+/* Our Products Section End Here  */
+
+
+/* Footer Start Styling */
+
+.footer_area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-image: url(../img/footer-img/footerbg.jpg);
+    padding: 6rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.footer-content a {
+    color: #fff;
+}
 
 
 /* Top to Bottom Scrolling Styling  Start Here*/
