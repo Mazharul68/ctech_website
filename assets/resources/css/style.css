@@ -157,7 +157,8 @@ ul {
     margin-bottom: 4rem;
 }
 
-.navbar_area::before,
+
+/* .navbar_area::before,
 .navbar_area::after {
     content: '';
     position: absolute;
@@ -171,7 +172,7 @@ ul {
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
     -o-transform: skewY(-3deg);
-}
+} */
 
 .navbar .menu .menu-item {
     display: inline;
@@ -370,7 +371,7 @@ ul {
 }
 
 .slider_content h1 span {
-    color: #930915;
+    color: #f1eeee;
     font-size: 600;
 }
 
@@ -486,29 +487,34 @@ ul {
 /* About Section End Here  */
 
 
-/* Our Products Section  Start Here  */
+/* our_services Section  Start Here  */
 
-.our_product {
+.our_services {
     margin-top: 4rem;
 }
 
-.our_product .title_heading {
-    text-align: center;
+.our_services .title_heading {
+    /* text-align: center; */
     margin-bottom: 3rem;
     position: relative;
     color: rgb(51, 51, 51);
     ;
+    margin-left: 2rem;
 }
 
-.our_product .title_heading::after {
+.our_services .title_heading span {
+    color: rgb(2, 17, 72);
+}
+
+.our_services .title_heading::after {
     position: absolute;
     content: "";
     display: block;
     bottom: 0;
-    left: 50%;
-    width: 178px;
+    left: 38px;
+    width: 75px;
     height: 4px;
-    background: #01B0AE;
+    background: #f05524;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translate(-50%);
@@ -517,8 +523,71 @@ ul {
     bottom: -8px;
 }
 
-.our_product .title_content {
+.our_services .title_content {
     padding: 0 4rem;
+}
+
+.service_item {
+    flex-basis: 30%;
+    margin: 0 auto;
+    background: #f4f4f4;
+    margin: 0 2rem;
+}
+
+.service_item h3 {
+    color: rgb(51, 51, 51);
+    font-size: 2.3rem;
+}
+
+.our_services .title_content {
+    padding: unset;
+    color: rgb(102, 102, 102);
+}
+
+.service_content {
+    padding: 1rem;
+}
+
+.service_content .btn-button {
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+.service_content .btn-button a {
+    color: #000;
+}
+
+.service_item img {
+    width: 450px;
+}
+
+.our_services .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 265px;
+}
+
+.our_services .owl-dot-style .owl-dots {
+    text-align: center;
+    writing-mode: unset;
+    -webkit-writing-mode: unset;
+    -ms-writing-mode: unset;
+}
+
+.our_services .owl-dot-style .owl-dots {
+    bottom: 0;
+    position: relative;
+    text-align: center;
+    top: 100%;
+    -webkit-writing-mode: unset;
+    -ms-writing-mode: unset;
+    writing-mode: unset;
+    transform: translate(-50%);
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
 }
 
 

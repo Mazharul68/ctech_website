@@ -48,7 +48,7 @@ $(document).ready(function() {
     });
     //Typing Scripts
     var typed = new Typed(".tying3", {
-        strings: ["Administration", "IT/ITES"],
+        strings: ["Administration", "ITES"],
         typeSpeed: 150,
         backSpeed: 10,
         loop: true
@@ -72,6 +72,28 @@ $(document).ready(function() {
             },
             1000: {
                 items: 1
+            }
+        }
+    });
+    // Owl Coursel Js
+    $('#slider-owl-carousel1').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        item: 3,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1000: {
+                items: 3
             }
         }
     });
