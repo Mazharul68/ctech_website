@@ -97,5 +97,36 @@ $(document).ready(function() {
             }
         }
     });
+    // Owl Coursel Js
+    $('#our_client').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        item: 3,
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+
+    mixitup(".emon");
+    $(".slider").slick({ infinite: !0, slidesToShow: 1, slidesToScroll: 1 }),
+        $(".top").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 2e3);
+        }),
+        $(window).scroll(function() {
+            $(window).scrollTop() < 500 ? $(".top").fadeOut() : $(".top").fadeIn();
+        });
 
 });

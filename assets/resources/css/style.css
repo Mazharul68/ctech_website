@@ -527,11 +527,18 @@ ul {
     padding: 0 4rem;
 }
 
-.service_item {
+.service_item,
+.client_item {
     flex-basis: 30%;
     margin: 0 auto;
     background: #f4f4f4;
     margin: 0 2rem;
+}
+
+.client_item {
+    display: flex;
+    justify-content: center;
+    background: unset;
 }
 
 .service_item h3 {
@@ -565,6 +572,11 @@ ul {
     display: block;
     width: 100%;
     height: 265px;
+}
+
+.our_client .owl-carousel .owl-item img {
+    width: 90px;
+    margin-top: 2rem;
 }
 
 .our_services .owl-dot-style .owl-dots {
@@ -654,6 +666,201 @@ ul {
 
 
 /* our_employee_area Section End Here  */
+
+
+/* Our Clients Section Start Here  */
+
+.our_client {
+    padding: 1rem 0;
+}
+
+.our_client h2,
+.our_certification h2 {
+    background: #01B0AE;
+    text-align: center;
+    padding: 3rem 0;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.our_certification {
+    margin-top: 4rem;
+    background: #fbfafa;
+    padding-bottom: 2rem;
+}
+
+.our_certification h2 {
+    background: unset;
+    color: #000;
+    position: relative;
+}
+
+.our_certification h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    background: #01B0AE;
+    height: 6px;
+    width: 97px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.certification {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.certification_item {
+    text-align: center;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.certification_item img {
+    width: 110px;
+}
+
+
+/* Our Clients Section End Here  */
+
+
+/* Our Gallery Section Start Here  */
+
+#my-service-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/girl.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    border-bottom: 0.1rem solid #f96d0b;
+}
+
+#my-service-section .heading-area h4 {
+    color: #f96d0b;
+    top: 4rem;
+}
+
+.my-service-heading h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.my-service-title a h2 {
+    color: #230935;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
+
+.my-service-title a {
+    text-decoration: none;
+}
+
+.my-service-title a h2:hover {
+    color: #f96d0b;
+}
+
+.title-description p {
+    color: #919191;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+#my-portfolio-section {
+    background-image: url(../img/potbg.png);
+    padding-top: 6rem;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+#my-portfolio-section .heading-area h4 {
+    color: #f96d0b;
+    top: 0;
+}
+
+.heading-title h4 {
+    left: 2rem;
+}
+
+.my-portfolio {
+    margin-bottom: 5rem;
+}
+
+.portfolio-item h1 {
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.portfolio-item span {
+    color: rgb(240, 85, 36);
+}
+
+.portfolio-item ul {
+    display: flex;
+    cursor: pointer;
+}
+
+.portfolio-item ul li {
+    border-top: 0.1rem solid #cbc6cf;
+    border-left: 0.1rem solid #cbc6cf;
+    border-bottom: 0.1rem solid #cbc6cf;
+    position: relative;
+}
+
+.portfolio-item ul li:last-child {
+    border-right: 0.1rem solid #cbc6cf;
+}
+
+.portfolio-item ul li {
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: #230935;
+}
+
+.portfolio-item ul li.active:before {
+    content: "";
+    display: block;
+    background: #f96d0b;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -0.2rem;
+    width: 68%;
+    height: 0.3rem;
+}
+
+.portfolio-item ul li.active a {
+    color: #f96d0b;
+}
+
+.portfolio-option img {
+    width: 300px;
+    height: 300px;
+}
+
+.portfolio-option {
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+/* Our Gallery Section End Here  */
 
 
 /* Footer Start Styling */
