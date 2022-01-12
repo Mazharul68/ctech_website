@@ -594,6 +594,68 @@ ul {
 /* Our Products Section End Here  */
 
 
+/* our_employee_area Section Start Here  */
+
+.our_employee {
+    background-image: url(../img/slider/slider6.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding: 4rem 2rem;
+    color: #fff;
+}
+
+.our_employee h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.our_employee_content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.our_employee_content .title_content {
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 18px;
+    font-weight: 1;
+}
+
+.our_employee_item {
+    padding: 4rem 0;
+}
+
+.our_employee_item h4,
+.our_employee_item span {
+    font-size: 3.5rem;
+    color: rgb(255, 193, 7);
+}
+
+.our_employee_item span {
+    color: unset;
+}
+
+.overlay::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 5, 5, 0.8);
+    z-index: -1;
+}
+
+
+/* our_employee_area Section End Here  */
+
+
 /* Footer Start Styling */
 
 .footer_area {
@@ -636,3 +698,9 @@ ul {
 
 
 /* Top to Bottom Scrolling Styling  Start Here*/
+
+
+/* h1{
+    text-overflow: ellipsis;
+    overflow: hidden;
+} */
